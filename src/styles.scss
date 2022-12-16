@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/theming";
+
+:root {
+  height: 100%;
+  --primary: #310f61;
+  --accent: #ffca2c;
+  --warn: #fb1b0a;
+  --background: #ffffff;
+  --bg-card: #ffffff;
+  --color-text: #ffffff;
+  --color-text-black: #000000;
+}
+
+:root .dark-theme {
+  height: 100%;
+  --primary: #6730ec;
+  --accent: #ffca2c;
+  --warn: #ff3863;
+  --background: #26293b;
+  --bg-card: #303347;
+  --color-text: #ffffff;
+  --color-text-black: #ffffff;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: var(--background);
+}
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+mat-card {
+  max-width: 60%;
+  margin: 2em auto;
+  text-align: center;
+}
